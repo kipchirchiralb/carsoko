@@ -1,0 +1,26 @@
+.contact-banner {
+  align-items: center;
+  background: var(--lime);
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 3.5rem clamp(1.25rem, 10vw, 9rem);
+}
+.contact-banner h2 {
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  line-height: 1;
+  margin: 0;
+  max-width: 600px;
+}
+.contact-banner a {
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+@media (max-width: 650px) {
+  .contact-banner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

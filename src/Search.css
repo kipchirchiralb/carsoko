@@ -1,0 +1,50 @@
+.search-section {
+  padding: clamp(4rem, 9vw, 7rem) clamp(1.25rem, 10vw, 9rem);
+}
+.search-form {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2.5rem;
+}
+.search-form label {
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.search-form select {
+  appearance: none;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  color: var(--ink);
+  display: block;
+  font:
+    1rem Georgia,
+    serif;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+.search-form select:disabled {
+  color: #a6afa8;
+  cursor: not-allowed;
+}
+.search-summary {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  margin: 2rem 0 0;
+  padding-top: 1.2rem;
+}
+.search-summary strong {
+  color: var(--ink);
+}
+@media (max-width: 650px) {
+  .search-form {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,35 @@
+.site-footer {
+  align-items: flex-end;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr auto auto;
+  padding: 3rem clamp(1.25rem, 5vw, 4.5rem);
+}
+.site-footer p {
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  margin: 0.6rem 0 0;
+}
+.footer-links {
+  display: flex;
+  gap: 1.25rem;
+}
+.footer-links a {
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  text-decoration: none;
+}
+.site-footer .copyright {
+  margin: 0;
+}
+@media (max-width: 650px) {
+  .site-footer {
+    align-items: flex-start;
+    grid-template-columns: 1fr;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+  }
+}

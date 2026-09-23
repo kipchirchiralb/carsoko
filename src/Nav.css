@@ -1,0 +1,53 @@
+.site-header {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 1.5rem clamp(1.25rem, 5vw, 4.5rem);
+}
+.brand {
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+}
+.brand span {
+  color: var(--green);
+}
+.site-header nav {
+  display: flex;
+  gap: 1.75rem;
+  margin-left: auto;
+}
+.site-header nav a,
+.header-action {
+  font-family: Arial, sans-serif;
+  font-size: 0.82rem;
+  text-decoration: none;
+}
+.site-header nav a {
+  color: var(--muted);
+}
+.site-header nav a:hover,
+.footer-links a:hover {
+  color: var(--green);
+}
+.header-action {
+  background: var(--ink);
+  border-radius: 999px;
+  color: white;
+  padding: 0.7rem 1.1rem;
+}
+.header-action span,
+.primary-button span,
+.contact-banner a span {
+  margin-left: 0.35rem;
+}
+@media (max-width: 650px) {
+  .site-header nav {
+    display: none;
+  }
+  .header-action {
+    margin-left: auto;
+  }
+}
